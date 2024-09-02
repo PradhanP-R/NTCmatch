@@ -10,10 +10,6 @@ match_NTC_names <- function(names) {
     install.packages("readxl")
     library(readxl)
   }
-  if(!require(dplyr)){
-    install.packages("dplyr")
-    library(dplyr)
-  }
   load(system.file("data", "NTCdata.RData", package = "NTCmatch"))
 
   # Match names with scientific names in my_dataframe
